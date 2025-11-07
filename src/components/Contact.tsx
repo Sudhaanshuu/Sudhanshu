@@ -46,8 +46,8 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-20 bg-gray-900 relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(147,51,234,0.1),transparent_70%)]" />
-      
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.03),transparent_60%)]" />
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -55,8 +55,8 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-4xl sm:text-5xl font-bold text-center mb-16"
         >
-          <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-            Let's Work Together
+          <span className="text-white">
+            Let's <span className="text-purple-400">Work Together</span>
           </span>
         </motion.h2>
 
@@ -122,7 +122,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-gray-800/50 rounded-xl p-8 border border-purple-500/20"
+            className="bg-gray-800/40 rounded-xl p-8 border border-gray-700/50"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -166,7 +166,7 @@ export default function Contact() {
                   onChange={handleChange}
                   rows={6}
                   required
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-purple-500/20 rounded-lg focus:border-purple-500/60 focus:ring-2 focus:ring-purple-500/20 text-white placeholder-gray-500 transition-all resize-none"
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/30 rounded-lg focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 text-white placeholder-gray-500 transition-all resize-none"
                   placeholder="Tell me about your project or just say hello..."
                 />
               </div>
@@ -176,7 +176,7 @@ export default function Contact() {
                 disabled={status === 'sending'}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full flex items-center justify-center px-6 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center px-6 py-4 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {status === 'sending' ? (
                   <>
@@ -250,7 +250,7 @@ const Input = ({
       value={value}
       onChange={onChange}
       required={required}
-      className="w-full px-4 py-3 bg-gray-700/50 border border-purple-500/20 rounded-lg focus:border-purple-500/60 focus:ring-2 focus:ring-purple-500/20 text-white placeholder-gray-500 transition-all"
+      className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/30 rounded-lg focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 text-white placeholder-gray-500 transition-all"
       placeholder={placeholder}
     />
   </div>
@@ -268,8 +268,8 @@ const ContactInfo = ({
   href?: string;
 }) => (
   <motion.div
-    whileHover={{ x: 10 }}
-    className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/30 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300"
+    whileHover={{ x: 5 }}
+    className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/40 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300"
   >
     <div className="text-purple-400">{icon}</div>
     <div>

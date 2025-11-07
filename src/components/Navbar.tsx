@@ -29,8 +29,8 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-gray-950/95 backdrop-blur-lg border-b border-purple-500/20' 
+        scrolled
+          ? 'bg-gray-950/95 backdrop-blur-lg border-b border-gray-700/50'
           : 'bg-transparent'
       }`}
     >
@@ -40,10 +40,8 @@ export default function Navbar() {
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
           >
-            <Code2 className="h-8 w-8 text-purple-500" />
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-              Sudhanshu
-            </span>
+            <Code2 className="h-8 w-8 text-purple-400" />
+            <span className="text-xl font-bold text-white">Sudhanshu</span>
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -55,7 +53,7 @@ export default function Navbar() {
                 whileHover={{ y: -2 }}
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 group-hover:w-full transition-all duration-300" />
               </motion.a>
             ))}
           </div>
@@ -77,7 +75,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-gray-950/95 backdrop-blur-lg border-b border-purple-500/20"
+            className="md:hidden bg-gray-950/95 backdrop-blur-lg border-b border-gray-700/50"
           >
             <div className="px-4 py-4 space-y-2">
               {navItems.map((item) => (
