@@ -1,16 +1,48 @@
-<!doctype html>
-<html lang="en">
 
-<head>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/logo.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="/1758998373826.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUDHANSHU</title>
+    <title>Sudhanshu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2E4F4F',
+              secondary: '#FDB813',
+              'primary-dark': '#2C3E50',
+              'light-bg': '#F8F9FA',
+              'dark-text': '#343A40',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-
-<body>
+  <body class="bg-white text-dark-text">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-</body>
-
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
