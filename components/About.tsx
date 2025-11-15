@@ -28,7 +28,7 @@ const About: React.FC = () => {
                     <div className="grid grid-cols-2 gap-6">
                         <StatCard icon={Award} value="30+" label="Hackathons Participated" />
                         <StatCard icon={Code} value="200" label="Global LeetCode Rank" />
-                        <StatCard icon={Users} value="9.28" label="Current CGPA" />
+                        <StatCard icon={Users} value="9.32" label="Current CGPA" />
                         <StatCard icon={Briefcase} value="5+" label="Major Projects" />
                     </div>
                 </div>
