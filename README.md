@@ -11,4 +11,4 @@ Open to **full-time roles**, **freelance work**, and **open-source collaboration
 
 ---
 
-© 2025 Sudhanshu Kumar. All rights reserved.
+© 2026 Sudhanshu Kumar. All rights reserved.
