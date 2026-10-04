@@ -4,7 +4,7 @@ A modern and responsive personal portfolio showcasing my skills, experience, pro
 ---
 
 ## 👋 About Me
-Hi, I'm **Sudhanshu** a **Full Stack Developer & AI Enthusiast**.  
+Hi, I'm **Sudhanshu Kumar** a **Full Stack Developer & AI Enthusiast**.  
 I enjoy building web applications, working with machine learning models, and exploring innovative technologies.
 
 Open to **full-time roles**, **freelance work**, and **open-source collaborations**.
